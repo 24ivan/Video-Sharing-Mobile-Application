@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "React_native_crash_course",
-    "slug": "React_native_crash_course",
+    "name": "AI Share",
+    "scheme": "aishare",
+    "slug": "AI_Share",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.jsm.aora"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jsm.aora"
     },
     "web": {
       "bundler": "metro",
