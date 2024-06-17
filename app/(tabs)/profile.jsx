@@ -4,12 +4,13 @@ import { View, Text, FlatList, TouchableOpacity, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import useAppwrite from "../../lib/useAppwrite";
-import { getUserPosts } from "../../lib/appwrite";
+import { getUserPosts, signOut } from "../../lib/appwrite";
 import EmptyState from "../../components/EmptyState";
 import InfoBox from "../../components/InfoBox";
 import VideoCard from "../../components/VideoCard";
 import { useGlobalContext } from '../../context/GlobalProvider'
 import { icons } from "../../constants";
+import { router } from "expo-router";
 
 
 const Profile = () => {
@@ -17,8 +18,11 @@ const Profile = () => {
   const { data: posts, refetch } = useAppwrite(
     () => getUserPosts(user.$id));
 
-  const logout = () => {
-    
+  const logout = async () => {
+    await signOut();
+    setUser(null);
+    setIsLoggedIn(false);
+    router.replace('/sign-in')
   }
 
 
