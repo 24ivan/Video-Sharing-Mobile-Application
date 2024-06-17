@@ -44,11 +44,11 @@ const SignUp = () => {
     <SafeAreaView className="bg-primary h-full">
       <ScrollView>
         <View className="w-full justify-center min-h-[85vh] px-4 my-6">
-          <Image source={images.logo}
-            resizeMode='contain' className="w-[115px] h-[35px]"
-          />
+          <Text className="text-4xl text-white font-bold text-center">
+            IvanVid
+          </Text>
           <Text className="text-2xl text-white text-semibold mt-10 font-psemibold">
-            Sign up to Aora
+            Sign up to IvanShare
           </Text>
 
           <FormField 

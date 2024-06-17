@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { SplashScreen, Stack } from 'expo-router';
@@ -34,6 +35,7 @@ const RooyLayout = () => {
                 <Stack.Screen name ="(auth)" options={{headerShown: false}} />
                 <Stack.Screen name ="(tabs)" options={{headerShown: false}} />
                 <Stack.Screen name ="search/[query]" options={{headerShown: false}} />
+                
             </Stack>
         </GlobalProvider>
     );
