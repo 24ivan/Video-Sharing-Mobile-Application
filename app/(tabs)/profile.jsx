@@ -74,8 +74,7 @@ const Profile = () => {
               titleStyles="text-xl"
             />
             <InfoBox
-              title={"1.2k"}
-              subtitle="Followers"
+              title={"Beta User"}
               titleStyles="text-lg"
             />
             </View>
